@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nucl-Ex Paper Writing"
+  short_description: "Draft, review, and revise high-energy nuclear experiment papers."
+  default_prompt: "Use $nucl-ex-paper-writing to turn my heavy-ion analysis notes, plots, references, and draft text into a journal-ready nuclear experiment paper."
