@@ -1,6 +1,6 @@
 ---
 name: nucl-ex-paper-writing
-description: High-energy nuclear experiment paper writing and review workflow for nucl-ex and heavy-ion manuscripts. Use when drafting, revising, self-reviewing, citation-checking, or responding to reviewers for ALICE, STAR, PHENIX/sPHENIX, CMS-HIN, ATLAS-HI, LHC/RHIC/EIC, fixed-target, QGP, flow, spectra, jets, heavy flavor, quarkonia, correlations, femtoscopy, fluctuations, centrality, ROOT/HEPData/INSPIRE/arXiv/PDG, LaTeX, REVTeX, JHEP, NPA, PLB, PRC, PRL, or collaboration/internal review tasks.
+description: High-energy nuclear experiment paper writing and review workflow for nucl-ex and heavy-ion manuscripts. Use when drafting, revising, HEP prose polishing, self-reviewing, citation-checking, or responding to reviewers for ALICE, STAR, PHENIX/sPHENIX, CMS-HIN, ATLAS-HI, LHC/RHIC/EIC, fixed-target, QGP, flow, spectra, jets, heavy flavor, quarkonia, correlations, femtoscopy, fluctuations, centrality, ROOT/HEPData/INSPIRE/arXiv/PDG, LaTeX, REVTeX, JHEP, NPA, PLB, PRC, PRL, or collaboration/internal review tasks.
 ---
 
 # Nucl-Ex Paper Writing
@@ -22,6 +22,8 @@ Prefer primary sources in this order:
 
 For manuscripts, use collaboration-neutral scientific tone unless the user provides a target collaboration style. Avoid "AI-humanizer" rewriting that changes technical claims, uncertainty language, or collaboration voice.
 
+For manuscript prose, especially introductions, abstracts, captions, and interpretation paragraphs, use concrete HEP/nucl-ex prose. Do not use abstract framing, tutorial exposition, or AI-style bridge sentences as substitutes for specific physics statements.
+
 ## Quick Mode Selection
 
 Identify the user's task and follow the matching mode.
@@ -30,6 +32,7 @@ Identify the user's task and follow the matching mode.
 - **Drafting from notes**: Convert notes, figures, and tables into a LaTeX-ready manuscript while preserving all caveats.
 - **Results reporting**: Turn plots and fit/model comparisons into concise result paragraphs with explicit observables, systems, energies, centrality, kinematics, and uncertainties.
 - **Citation verification**: Check claims against INSPIRE/arXiv/DOI/PDG/HEPData. Replace vague citations with specific references or TODOs.
+- **HEP prose polish**: Rewrite drafts into natural STAR/ALICE/CMS-HIN/ATLAS-HI-style prose by removing conceptual filler and pedagogical bridge sentences while preserving technical meaning.
 - **Self-review**: Audit physics consistency, figure/table readiness, uncertainty treatment, and journal/collaboration expectations.
 - **Reviewer response**: Produce a response matrix, proposed manuscript edits, and polite point-by-point replies.
 - **Formatting or submission**: Prepare REVTeX, JHEP/Springer, Elsevier, PRC/PRD/PRL, NPA, PLB, or collaboration-specific LaTeX outputs.
@@ -39,6 +42,7 @@ Identify the user's task and follow the matching mode.
 Load only the reference needed for the current task.
 
 - Read `references/paper-structure.md` when creating an outline, drafting a paper section, reorganizing a manuscript, or adapting a generic writing skill to nucl-ex.
+- Read `references/hep-prose-style.md` when drafting or polishing introductions, abstracts, result interpretations, captions, conference abstracts, or any text where the user asks for natural HEP/nucl-ex prose.
 - Read `references/domain-checklists.md` when reviewing results, figures, systematics, analysis descriptions, physics claims, or self-review reports.
 - Read `references/tool-adapter-map.md` when combining this skill with existing skills or tools such as claude-scholar, K-Dense scientific skills, AMiner, defuddle, ROOT MCP, INSPIRE, HEPData, docx, pdf, or pptx.
 
@@ -85,6 +89,8 @@ Write in the usual nucl-ex order unless the target journal demands otherwise:
 For each result paragraph, state the observable, system, energy, centrality/event class, kinematic range, uncertainty convention, and comparison baseline before interpretation.
 
 For introductions, avoid generic QGP boilerplate. Connect the observable to a specific physics question such as collectivity, energy loss, hadronization, initial-state effects, critical behavior, equation of state, medium response, or small-system dynamics.
+
+For prose polishing, do not rely on word-level blacklists. Keep standard HEP terms when they refer to a concrete mechanism, observable, model ingredient, or experimental consequence. Rewrite sentences whose main function is only to say that concepts are connected, viewed, framed, bridged, or understood.
 
 For conclusions, separate:
 
